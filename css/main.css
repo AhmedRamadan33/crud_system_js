@@ -1,0 +1,20 @@
+.product_home{
+   background-color: #F6F6F6;
+}
+
+
+ .form-control {
+   margin-bottom: 15px;
+ }
+ .table td, .table th {
+   vertical-align: middle;
+ }
+ .table td {
+   background-color: teal;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 600;
+ }
+
+
+ 

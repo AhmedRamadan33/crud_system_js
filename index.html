@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Home</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@200;300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div class="product_home">
+  
+  <div class="container">
+    <h1>Product</h1>
+
+    
+    <label for="productName">Product Name</label>
+    <input type="text"  name="" class="form-control" id="productName">
+
+    <label for="productPrice">Product Price</label>
+    <input type="number"  name="" class="form-control" id="productPrice">
+
+    <label for="productCateg">Product Categ</label>
+    <input type="text"  name="" class="form-control" id="productCateg">
+
+    <label for="productDescription">Product Description</label>
+    <input type="text"  name="" class="form-control" id="productDescription">
+
+    <input type="number"  name="" class="form-control w-50" id="productCount" placeholder="product Count">
+
+    <button onclick="addProduct()" class="btn btn-info p-2 mt-3" id="submit">Add Product</button>
+
+    <button onclick="deleteAll()" class="btn btn-danger p-2 mt-3"> Delete All  </button>
+
+    <input type="text" name="" onkeyup="searchProduct(this.value)" class="form-control w-50 m-auto mt-3" placeholder="Search.." id="">
+
+    <table class="table table-bordered text-center mt-4">
+      <thead class="bg-dark text-light">
+        <th>id</th>
+        <th> Product Name</th>
+        <th> Product Price</th>
+        <th> Product Categ</th>
+        <th> Product Description</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+      </thead>
+      <tbody id="t_body">
+        
+      </tbody>
+    <tfoot class="text-center">
+     <th id="total"></th>
+     <th id="totalPrice"></th>
+    </tfoot>
+    </table>
+  </div>
+</div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
